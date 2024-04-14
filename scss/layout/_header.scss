@@ -1,0 +1,25 @@
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    padding: .125rem;
+    background-color: black;
+}
+.nav-site{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.25rem;
+    font-weight: 600;
+    list-style-type: none; 
+    gap: 1.875rem;
+    padding-right: 1.25rem;
+}
+.nav-site li a{
+    text-decoration: none;
+    color: white;
+}

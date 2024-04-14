@@ -1,83 +1,130 @@
-.main-banner {
+.home-banner {
     width: 100%;
-    height: 540px;
-    background-image: url("../assets/img/banner-main.png");
-    background-size: 100% 540px; }
-.main-banner h1 {
-    font-size: 3.75rem;
-    color: white;
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    text-shadow: 2px 2px 5px black; }
-.logo-banner {
-    position: absolute;
-    top: 60%;
-    right: 15%;
-    left: 85%;
-    bottom: 15%; }
-.section-category {
-    width: 87.5rem;
-    height: 25rem; }
-.section-category h2 {
-    text-align: center;
-    padding-bottom: 10px; }
-.categorias-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
-.categorias-main h3 {
-    text-align: center; }
+    height: 544px;
+    background-image: url("../assets/img/main_banner.png");
+    background-size: 100% 544px; }
+    .home-banner h1 {
+        font-size: 60px;
+        font-weight: 800;
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+        text-shadow: 2px 2px 5px black; }
+.home-section {
+    width: 100%;
+    height: 400px; }
+    .home-section h2 {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 5px 10px; }
+    .home-categories {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px; }
+        .home-categories h3 {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center; }
+        .home-categories img{
+            filter: drop-shadow(5px 5px 5px black); }
 .newsletter {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     height: 250px; }
-.newsletter1 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    background-color: black;
-    width: 720px;
-    height: 250px;
-    color: white;
-    padding: 25px 0px 25px 0px; }
-.newsletter-main {
-    padding: 60px 0px 60px 0px;
-    text-align: justify; }
-.newsletter-main h4 {
-    padding-bottom: 5px;
-    text-align: center; }
-.newsletter2 {
-    background-color: #d9d9d9;
-    width: 720px;
-    height: 250px;
-    padding: 50px 30px 50px 30px; }
-.contactohome {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 1440px;
-    height: 250px; }
-.rrss {
-    background-color: #d9d9d9;
-    width: 720px;
-    height: 250px;
-    padding: 50px 200px 50px 200px; }
-.rrss h4 {
-    text-align: center;
-    padding-bottom: 5px; }
-.customerservice {
-    background-color: black;
-    width: 720px;
-    height: 250px;
-    color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    padding-left: 300px;
-    padding-right: 200px; }
+    .newsletter1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        background-color: black;
+        width: 50%;
+        height: 250px;
+        color: white;
+        padding: 25px 10px 25px 10px; }
+        .newsletter-main {
+            width: 60%; }
+            .newsletter-main h4 {
+                font-size: 24px;
+                font-weight: 700;
+                padding-bottom: 5px;
+                text-align: center; }
+            .newsletter-main p{
+                font-size: 20px;
+                font-weight: 500;
+                text-justify: distribute; }
+    .newsletter2 {
+        background-color: #d9d9d9;
+        width: 50%;
+        height: 250px;
+        padding: 50px 30px 50px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+            fieldset{
+                border: 0px;
+                padding-bottom: 10px; }
+                legend{
+                    display: none;}
+                ::placeholder{
+                    font-size: 16px;
+                    color: #d9d9d9;
+                    font-family: "Montserrat", sans-serif; }
+        .registronewsletter{
+                width: 200px;
+                height: 30px;
+                border: 0px;
+                background-color: black;
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                font-weight: 700; 
+                letter-spacing: 2px;
+                filter: drop-shadow(3px 3px 3px black); }
+    .contactohome {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-flow: row nowrap; }
+        .rrss {
+            background-color: #d9d9d9;
+            width: 50%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .rrss h4 {
+                font-size: 24px;
+                font-weight: 700;
+                padding-bottom: 5px;
+                text-align: center; }
+            .iconos-rrss{
+                text-align: center; }
+        .customerservice {
+            background-color: black;
+            width: 50%;
+            height: 250px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .customerservice h4{
+                font-size: 24px;
+                font-weight: 700;
+                padding-bottom: 10px;
+                text-align: center; }
+            .customerservice ul li{
+                font-size: 16px;
+                font-weight: 700;
+                list-style-type: none;
+                text-align: center;
+                padding-bottom: 2px; }

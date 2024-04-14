@@ -1,67 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+font-family: "Montserrat", sans-serif;
+*/
 body {
-  font-family: 'Trebuchet MS', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: .125rem;
+  background-color: black; }
+
 .nav-site {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  background-color: black;
-  color: white;
-  list-style-type: none; }
+  font-size: 1.25rem;
+  font-weight: 600;
+  list-style-type: none;
+  gap: 1.875rem;
+  padding-right: 1.25rem; }
 
 .nav-site li a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
-.main-banner {
+.home-banner {
   width: 100%;
-  height: 540px;
-  background-image: url("../assets/img/banner-main.png");
-  background-size: 100% 540px; }
+  height: 544px;
+  background-image: url("../assets/img/main_banner.png");
+  background-size: 100% 544px; }
 
-.main-banner h1 {
-  font-size: 3.75rem;
+.home-banner h1 {
+  font-size: 60px;
+  font-weight: 800;
   color: white;
   position: absolute;
   top: 150px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
-.logo-banner {
-  position: absolute;
-  top: 60%;
-  right: 15%;
-  left: 85%;
-  bottom: 15%; }
+.home-section {
+  width: 100%;
+  height: 400px; }
 
-.section-category {
-  width: 87.5rem;
-  height: 25rem; }
-
-.section-category h2 {
+.home-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-align: center;
-  padding-bottom: 10px; }
+  padding: 5px 10px; }
 
-.categorias-main {
+.home-categories {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; }
 
-.categorias-main h3 {
+.home-categories h3 {
+  font-size: 20px;
+  font-weight: 700;
   text-align: center; }
+
+.home-categories img {
+  filter: drop-shadow(5px 5px 5px black); }
 
 .newsletter {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   height: 250px; }
 
 .newsletter1 {
@@ -69,68 +89,124 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-content: center;
+  align-items: center;
   background-color: black;
-  width: 720px;
+  width: 50%;
   height: 250px;
   color: white;
-  padding: 25px 0px 25px 0px; }
+  padding: 25px 10px 25px 10px; }
 
 .newsletter-main {
-  padding: 60px 0px 60px 0px;
-  text-align: justify; }
+  width: 60%; }
 
 .newsletter-main h4 {
+  font-size: 24px;
+  font-weight: 700;
   padding-bottom: 5px;
   text-align: center; }
 
+.newsletter-main p {
+  font-size: 20px;
+  font-weight: 500;
+  text-justify: distribute; }
+
 .newsletter2 {
   background-color: #d9d9d9;
-  width: 720px;
+  width: 50%;
   height: 250px;
-  padding: 50px 30px 50px 30px; }
+  padding: 50px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+fieldset {
+  border: 0px;
+  padding-bottom: 10px; }
+
+legend {
+  display: none; }
+
+::placeholder {
+  font-size: 16px;
+  color: #d9d9d9;
+  font-family: "Montserrat", sans-serif; }
+
+.registronewsletter {
+  width: 200px;
+  height: 30px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  filter: drop-shadow(3px 3px 3px black); }
 
 .contactohome {
+  width: 100%;
+  height: 250px;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  width: 1440px;
-  height: 250px; }
+  flex-flow: row nowrap; }
 
 .rrss {
   background-color: #d9d9d9;
-  width: 720px;
+  width: 50%;
   height: 250px;
-  padding: 50px 200px 50px 200px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .rrss h4 {
-  text-align: center;
-  padding-bottom: 5px; }
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  text-align: center; }
+
+.iconos-rrss {
+  text-align: center; }
 
 .customerservice {
   background-color: black;
-  width: 720px;
+  width: 50%;
   height: 250px;
   color: white;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  padding-left: 300px;
-  padding-right: 200px; }
+  flex-direction: column;
+  justify-content: center; }
+
+.customerservice h4 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-align: center; }
+
+.customerservice ul li {
+  font-size: 16px;
+  font-weight: 700;
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 2px; }
 
 .footeraroha {
   height: 50px;
   background-color: black;
+  font-size: 16px;
+  font-weight: 700;
   color: white;
-  padding-top: 15px; }
+  padding-top: 15px;
+  text-align: center; }
 
 .nosotros-banner {
   width: 100%;
-  height: 540px;
-  background-image: url(../assets/img/banner-nosotros.png);
-  background-size: 100% 540px; }
+  height: 544px;
+  background-image: url(../assets/img/nosotros_banner.png);
+  background-size: 100% 544px; }
 
 .nosotros-banner h1 {
-  font-size: 3.75rem;
+  font-size: 60px;
+  font-weight: 800;
   color: white;
   position: absolute;
   top: 300px;
@@ -139,112 +215,201 @@ body {
 
 .section-origin {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   height: 250px;
   width: 100%; }
 
 .origin1 {
-  background-color: black;
-  color: white;
   width: 50%;
-  height: 250px; }
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .origin1 h2 {
-  text-align: center;
   font-size: 60px;
-  padding: 50px 50px 50px 50px; }
+  font-weight: 800;
+  color: white; }
 
 .origin2 {
-  width: 50%px;
-  height: 250px;
-  padding: 50px 50px 50px 50px;
+  width: 50%;
   background-color: white;
-  font-size: 28px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.origin2 p {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-align: justify; }
 
 .section-aroha {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   height: 250px;
   width: 100%; }
 
 .aroha1 {
   background-color: black;
-  color: white;
-  width: 50%; }
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .aroha1 h2 {
-  text-align: center;
   font-size: 60px;
-  padding: 50px 50px 50px 50px; }
+  font-weight: 800;
+  color: white; }
 
 .aroha2 {
   width: 50%;
-  height: 250px;
-  padding: 50px 50px 50px 50px;
   background-color: white;
-  font-size: 28px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.aroha2 p {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  align-items: center; }
 
 .section-brand {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   height: 250px;
   width: 100%; }
 
 .brand1 {
   background-color: black;
-  color: white;
-  width: 50%; }
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .brand1 h2 {
-  text-align: center;
   font-size: 60px;
-  padding: 50px 50px 50px 50px; }
+  font-weight: 800;
+  color: white; }
 
 .brand2 {
   width: 50%;
-  height: 250px;
-  padding: 50px 50px 50px 50px;
   background-color: white;
-  font-size: 28px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.brand2 p {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  align-items: center; }
 
 .tienda-banner {
-  background-image: url(../assets/img/banner-tienda.png);
-  height: 540px;
+  background-image: url(../assets/img/tienda_banner.png);
+  height: 544px;
   width: 100%;
-  background-size: 100% 540px; }
+  background-size: 100% 544px; }
 
 .tienda-banner h1 {
   font-size: 3.75rem;
+  font-weight: 800;
   color: white;
   position: absolute;
   top: 300px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
+.tienda-section {
+  width: 100%;
+  height: 400px; }
+
+.tienda-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px 10px; }
+
+.tienda-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; }
+
+.tienda-categories h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center; }
+
+.tienda-categories img {
+  filter: drop-shadow(5px 5px 5px black); }
+
 .section-products {
-  width: 87.5rem;
-  height: 32.5rem; }
+  width: 100%;
+  height: 520px;
+  border-top: 2.5px solid black; }
 
 .section-products h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-align: center;
-  padding-bottom: 10px; }
+  padding: 5px 10px; }
 
 .products {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; }
 
 .products h3 {
+  font-size: 24px;
+  font-weight: 800;
   text-align: center; }
 
 .products h5 {
+  font-size: 16px;
+  font-weight: 600;
   text-align: center; }
 
 .button-tienda {
-  align-items: center;
-  justify-content: center; }
+  width: 125px;
+  height: 30px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  filter: drop-shadow(3px 3px 3px black); }
+
+.contacto-banner {
+  width: 100%;
+  height: 544px;
+  background-image: url(../assets/img/.contacto-banner.png);
+  background-size: 100% 544px; }
+
+.contacto-banner h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  text-shadow: 2px 2px 5px black; }
 
 .contact-grid {
   display: grid;
@@ -252,8 +417,7 @@ body {
   height: 550px;
   grid-template-columns: 50% 50%;
   grid-template-rows: 45% 55%;
-  grid-template-areas: "contact1 contact2"
-  "contact3 contact3"; }
+  grid-template-areas: "contact1 contact2" "contact3 contact3"; }
 
 .contact1 {
   background-color: black;
@@ -270,6 +434,21 @@ body {
   background-color: #d9d9d9;
   grid-area: contact3;
   padding: 50px 100px 50px 100px; }
+
+.faq-banner {
+  width: 100%;
+  height: 544px;
+  background-image: url(../assets/img/faq_banner.png);
+  background-size: 100% 544px; }
+
+.faq-banner h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  text-shadow: 2px 2px 5px black; }
 
 .faq-page {
   display: flex;
