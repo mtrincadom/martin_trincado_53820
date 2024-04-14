@@ -1,0 +1,46 @@
+@media (max-width:768px){
+    .faq-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1000px;
+    }
+    .faq1{
+        width: 100%;
+        height: 30%;
+        padding: 100px 300px 50px 300px;
+    }
+    .faq1 h1{
+        font-size: 40px;
+    }
+    .faq2{
+        width: 100%;
+        height: 70%;
+    }
+    .faq2 h3{
+        font-size: 20px;
+    }
+    .faq2 p{
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .contact-grid{
+        display: grid;
+        width: 100%;
+        height: 800px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 20% 55%;
+        grid-template-areas: 
+        "contact1"
+        "contact2"
+        "contact3"
+        ;
+    }
+    .contact2 p{
+        font-size: 20px;
+        padding-left: 150px;
+    }
+    .contact3 p{
+        padding-top: 50px;
+    }
+}

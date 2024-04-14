@@ -1,0 +1,10 @@
+.nav-site {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: black;
+    color: white;
+    list-style-type: none; }
+.nav-site li a {
+    text-decoration: none; }

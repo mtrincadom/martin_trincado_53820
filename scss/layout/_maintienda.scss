@@ -1,0 +1,39 @@
+.tienda-banner{
+    background-image: url(../assets/img/banner-tienda.png);
+    height: 540px;
+    width: 100%;
+    background-size: 100% 540px;
+}
+.tienda-banner h1{
+    font-size: 3.75rem;
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    text-shadow: 2px 2px 5px black;
+}
+.section-products{
+    width: 87.5rem;
+    height: 32.5rem;
+}
+.section-products h2{
+    text-align: center;
+    padding-bottom: 10px;   
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.products h3{
+    text-align: center;
+}
+.products h5{
+    text-align: center;
+}
+.button-tienda{
+    align-items: center;
+    justify-content: center;
+}

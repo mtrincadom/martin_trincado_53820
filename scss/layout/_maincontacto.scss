@@ -1,0 +1,27 @@
+.contact-grid{
+    display: grid;
+    width: 100%;
+    height: 550px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: 
+    "contact1 contact2"
+    "contact3 contact3"    
+    ;
+}
+.contact1{
+    background-color: black;
+    grid-area: contact1;
+    padding: 40px 300px 40px 300px;
+}
+.contact2{
+    background-color: white;
+    grid-area: contact2;
+    padding: 40px 60px 40px 60px;
+    font-size: 28px;
+}
+.contact3{
+    background-color: #d9d9d9;
+    grid-area: contact3;
+    padding: 50px 100px 50px 100px;
+}
