@@ -209,7 +209,7 @@ legend {
   font-weight: 800;
   color: white;
   position: absolute;
-  top: 300px;
+  top: 272px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
@@ -323,7 +323,7 @@ legend {
   font-weight: 800;
   color: white;
   position: absolute;
-  top: 300px;
+  top: 272px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
@@ -357,7 +357,8 @@ legend {
 .section-products {
   width: 100%;
   height: 520px;
-  border-top: 2.5px solid black; }
+  border-top: 2.5px solid black;
+  padding-bottom: 10px; }
 
 .section-products h2 {
   font-size: 32px;
@@ -384,6 +385,14 @@ legend {
   font-weight: 600;
   text-align: center; }
 
+.products article img {
+  filter: drop-shadow(5px 5px 5px black); }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px; }
+
 .button-tienda {
   width: 125px;
   height: 30px;
@@ -396,44 +405,70 @@ legend {
   letter-spacing: 2px;
   filter: drop-shadow(3px 3px 3px black); }
 
-.contacto-banner {
+.contact-grid {
+  display: grid;
   width: 100%;
-  height: 544px;
-  background-image: url(../assets/img/.contacto-banner.png);
-  background-size: 100% 544px; }
+  height: 1044px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 544px 250px 250px;
+  grid-template-areas: "contact1 contact1"  "contact2 contact3" "contact4 contact4"; }
+
+.contacto-banner {
+  background-image: url(../assets/img/contacto_banner.png);
+  background-size: 100% 544px;
+  grid-area: contact1; }
 
 .contacto-banner h1 {
   font-size: 3.75rem;
   font-weight: 800;
   color: white;
   position: absolute;
-  top: 300px;
+  top: 272px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
-.contact-grid {
-  display: grid;
-  width: 100%;
-  height: 550px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 45% 55%;
-  grid-template-areas: "contact1 contact2" "contact3 contact3"; }
-
 .contact1 {
   background-color: black;
-  grid-area: contact1;
-  padding: 40px 300px 40px 300px; }
+  grid-area: contact2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .contact2 {
   background-color: white;
-  grid-area: contact2;
-  padding: 40px 60px 40px 60px;
-  font-size: 28px; }
+  grid-area: contact3;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contact2 div p {
+  font-size: 28px;
+  font-weight: 500; }
 
 .contact3 {
   background-color: #d9d9d9;
-  grid-area: contact3;
-  padding: 50px 100px 50px 100px; }
+  grid-area: contact4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.enviocontacto {
+  width: 125px;
+  height: 30px;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  filter: drop-shadow(3px 3px 3px black); }
+
+.contact3 p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px; }
 
 .faq-banner {
   width: 100%;
@@ -446,32 +481,43 @@ legend {
   font-weight: 800;
   color: white;
   position: absolute;
-  top: 300px;
+  top: 272px;
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
-.faq-page {
+.faq-main {
   display: flex;
-  height: 800px;
-  width: 100%; }
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 650px; }
 
 .faq1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
-  color: white;
-  width: 50%;
-  padding: 300px 100px 300px 300px; }
-
-.faq1 h1 {
-  font-size: 60px; }
+  width: 35%;
+  height: 650px; }
 
 .faq2 {
   background-color: white;
-  width: 50%;
-  padding: 15px 10px 5px 10px; }
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  padding: 0px 10px 0px 10px; }
+
+.faq2 ul li {
+  list-style-type: none; }
 
 .faq2 h3 {
-  font-size: 24px; }
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px; }
 
 .faq2 p {
   font-size: 16px;
-  padding-bottom: 15px; }
+  font-weight: 500;
+  padding: 5px; }

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Tienes dudas sobre tu compra? ¿No sabes el estado de tu envío? ¿Cambios o Devoluciones? Contáctanos, te ayudaremos">
+    <meta name="author" content="Martín Trincado Muñoz">
+    <meta name="copyright" content="Aroha Clothing Co.">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../assets/img/aroha_logo_nav.png"></a>
+        <a href="../index.html"><img src="../assets/img/aroha_logo_nav.png" alt="Logo Aroha Clothing Co. Navegación"></a>
         <nav>
             <ul class="nav-site">
                 <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
@@ -25,7 +28,7 @@
         <section class="contact1">
             <div>
                 <h2>CONTACTO</H2>
-                <img src="../assets/img/logo-chico.png">
+                <img src="../assets/img/logo-chico.png" alt="Logo Aroha Clothing Co. pequeño">
             </div>
         </section>
         <section class="contact2">
@@ -38,38 +41,39 @@
                 <fieldset>
                     <legend>Nombre y Apellido</legend>
                     <label for="nombre"></label>
-                    <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido" size="100" required>
                 </fieldset>
                 <fieldset>
-                    <legend>Correo electronico</legend>
+                    <legend>Correo electrónico</legend>
                     <label for="correo-electronico"></label>
-                    <input type="email" id="correo-electronico" required>                
+                    <input type="email" id="correo-electronico" placeholder="Correo Electrónico" size="100" required>                
                 </fieldset>
                 <fieldset>
-                    <legend>Telefono</legend>
+                    <legend>Teléfono</legend>
                     <label for="telefono"></label>
-                    <input type="tel" id="telefono" required>                
+                    <input type="tel" id="telefono" placeholder="(+56) 9 " size="50" required>                
                 </fieldset>
                 <fieldset>
                     <legend>Tipo de contacto</legend>
-                    <select name="" id="tipo-contacto" required>
+                    <select name="" id="tipo-contacto" aria-placeholder="Selecciona una opción" required>
                         <option value="consulta">Consulta</option>
                         <option value="consulta">Reclamo</option>
                         <option value="consulta">Sugerencia</option>
+                        <option value="consulta">Agradecimientos</option>
                     </select>                
                 </fieldset>
                 <fieldset>
-                    <legend>Cuentanos mas del motivo de tu contacto</legend>
+                    <legend>Motivo de tu contacto</legend>
                     <label for="motivo-contacto"></label>
-                    <input type="text" id="motivo-contacto" required>                
+                    <input type="text" id="motivo-contacto" placeholder="Motivo Contacto" size="100" required>                
                 </fieldset>
-                <input type="submit">
             </form>
+            <button class="enviocontacto">ENVIAR</button>
             <p>Te responderemos a la brevedad posible. Pero, para que lo tengas en cuentas nuestros horarios de atención son de lunes a viernes de 09:00 a 18:00 hrs.</p>
         </section>
     </main>
     <footer class="footeraroha">
-        <p><center>Aroha Clothing Co. 2024</center></p>
+        <p>Aroha Clothing Co. 2024</p>
     </footer>  
 </body>
 </html>
