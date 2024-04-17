@@ -189,15 +189,6 @@ legend {
   text-align: center;
   padding-bottom: 2px; }
 
-.footeraroha {
-  height: 50px;
-  background-color: black;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  padding-top: 15px;
-  text-align: center; }
-
 .nosotros-banner {
   width: 100%;
   height: 544px;
@@ -252,7 +243,7 @@ legend {
   height: 250px;
   width: 100%; }
 
-.aroha1 {
+.aroha2 {
   background-color: black;
   width: 50%;
   display: flex;
@@ -260,12 +251,12 @@ legend {
   justify-content: center;
   align-items: center; }
 
-.aroha1 h2 {
+.aroha2 h2 {
   font-size: 60px;
   font-weight: 800;
   color: white; }
 
-.aroha2 {
+.aroha1 {
   width: 50%;
   background-color: white;
   display: flex;
@@ -273,7 +264,7 @@ legend {
   justify-content: center;
   align-items: center; }
 
-.aroha2 p {
+.aroha1 p {
   font-size: 25px;
   font-weight: 600;
   color: black;
@@ -507,6 +498,7 @@ legend {
   flex-direction: column;
   align-items: center;
   width: 65%;
+  height: 650px;
   padding: 0px 10px 0px 10px; }
 
 .faq2 ul li {
@@ -521,3 +513,326 @@ legend {
   font-size: 16px;
   font-weight: 500;
   padding: 5px; }
+
+@media (max-width: 1024px) {
+  main {
+    height: 100%; }
+  .faq-banner {
+    width: 100%;
+    height: 386px;
+    background-image: url(../assets/img/faq_banner.png);
+    background-size: 100% 386px; }
+  .faq-banner h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 193px;
+    left: 150px; }
+  .faq-main {
+    height: 700px; }
+  .faq1 {
+    height: 100%; }
+  .faq2 {
+    height: 100%;
+    padding: 4px 8px 0px 8px; }
+  .faq2 h3 {
+    font-size: 18px; }
+  .faq2 p {
+    font-size: 14px; }
+  .contact-grid {
+    height: 100%;
+    grid-template-rows: 386px 200px 250px; }
+  .contacto-banner {
+    background-image: url(../assets/img/contacto_banner.png);
+    background-size: 100% 386px; }
+  .contacto-banner h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 193px;
+    left: 150px; }
+  .contact2 div p {
+    font-size: 20px;
+    font-weight: 500; }
+  .contact3 p {
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 10px; }
+  .nosotros-banner {
+    width: 100%;
+    height: 386px;
+    background-image: url(../assets/img/nosotros_banner.png);
+    background-size: 100% 386px; }
+  .nosotros-banner h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 193px;
+    left: 150px; }
+  .origin1 h2 {
+    font-size: 45px; }
+  .origin2 p {
+    font-size: 20px; }
+  .aroha2 h2 {
+    font-size: 45px; }
+  .aroha1 p {
+    font-size: 20px; }
+  .brand1 h2 {
+    font-size: 45px; }
+  .brand2 p {
+    font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .nav-site {
+    font-size: 15px;
+    font-weight: 500;
+    gap: 20px; }
+  main {
+    height: 100%; }
+  .faq-banner {
+    width: 100%;
+    height: 290px;
+    background-image: url(../assets/img/faq_banner.png);
+    background-size: 100% 290px; }
+  .faq-banner h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 145px;
+    left: 100px; }
+  .faq-main {
+    height: 478px; }
+  .faq1 {
+    height: 100%; }
+  .faq2 {
+    height: 100%;
+    padding: 4px 8px 2px 8px; }
+  .faq2 h3 {
+    font-size: 15px; }
+  .faq2 p {
+    font-size: 10px; }
+  .contact-grid {
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 290px 200px 200px 250px;
+    grid-template-areas: "contact1" "contact2" "contact3" "contact4"; }
+  .contacto-banner {
+    background-image: url(../assets/img/contacto_banner.png);
+    background-size: 100% 290px;
+    grid-area: contact1; }
+  .contacto-banner h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 145px;
+    left: 100px; }
+  .contact1 {
+    grid-area: contact2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contact2 {
+    grid-area: contact3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contact2 div p {
+    font-size: 24px;
+    font-weight: 500; }
+  .contact3 {
+    background-color: #d9d9d9;
+    grid-area: contact4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .enviocontacto {
+    width: 100px;
+    height: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600; }
+  .contact3 p {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 35px 0px 35px; }
+  .nosotros-banner {
+    height: 290px;
+    background-image: url(../assets/img/nosotros_banner.png);
+    background-size: 100% 290px; }
+  .nosotros-banner h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 145px;
+    left: 100px; }
+  .section-origin {
+    height: 150px; }
+  .section-origin h2 {
+    font-size: 35px; }
+  .section-origin p {
+    font-size: 14px; }
+  .section-aroha {
+    height: 150px; }
+  .section-aroha h2 {
+    font-size: 35px; }
+  .section-aroha p {
+    font-size: 14px; }
+  .section-brand {
+    height: 150px; }
+  .section-brand h2 {
+    font-size: 35px; }
+  .section-brand p {
+    font-size: 14px; } }
+
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; }
+  .nav-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    gap: 5px;
+    padding-bottom: 5px; }
+  main {
+    height: 100%; }
+  .faq-banner {
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/img/faq_banner.png);
+    background-size: 100% 100%; }
+  .faq-banner h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 180px;
+    left: 50px; }
+  .faq-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .faq1 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column; }
+  .faq2 {
+    width: 100%;
+    height: 100%;
+    padding: 4px 4px 4px 4px; }
+  .faq2 h3 {
+    font-size: 14px; }
+  .faq2 p {
+    font-size: 10px; }
+  .contact-grid {
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 125px 125px 250px;
+    grid-template-areas: "contact1" "contact2" "contact3" "contact4"; }
+  .contacto-banner {
+    background-image: url(../assets/img/contacto_banner.png);
+    background-size: 100% 150px;
+    grid-area: contact1; }
+  .contacto-banner h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 180px;
+    left: 50px; }
+  .contact2 div p {
+    font-size: 16px;
+    font-weight: 500; }
+  .enviocontacto {
+    font-size: 12px; }
+  .contact3 p {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 35px 10px 35px; }
+  .nosotros-banner {
+    height: 150px;
+    background-image: url(../assets/img/nosotros_banner.png);
+    background-size: 100% 150px; }
+  .nosotros-banner h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 180px;
+    left: 50px; }
+  .section-origin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px; }
+  .origin1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .origin2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section-origin h2 {
+    font-size: 25px; }
+  .section-origin p {
+    font-size: 12px; }
+  .section-aroha {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px; }
+  .aroha2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .aroha1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section-aroha h2 {
+    font-size: 25px; }
+  .section-aroha p {
+    font-size: 12px; }
+  .section-brand {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px; }
+  .brand1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .brand2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section-brand h2 {
+    font-size: 25px; }
+  .section-brand p {
+    font-size: 12px; } }
+
+.footeraroha {
+  height: 50px;
+  background-color: black;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  padding-top: 15px;
+  text-align: center; }

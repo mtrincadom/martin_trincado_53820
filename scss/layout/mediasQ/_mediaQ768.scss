@@ -1,0 +1,107 @@
+@media (max-width: 768px){
+    .nav-site{
+        font-size: 15px;
+        font-weight: 500;
+        gap: 20px; }
+    main{
+        height: 100%; }
+    .faq-banner{
+        width: 100%;
+        height: 290px;
+        background-image: url(../assets/img/faq_banner.png);
+        background-size: 100% 290px; }
+        .faq-banner h1{
+            font-size: 40px;
+            position: absolute;
+            top: 145px;
+            left: 100px; }
+    .faq-main{
+        height: 478px; }
+        .faq1{
+            height: 100%; }
+        .faq2{
+            height: 100%;
+            padding: 4px 8px 2px 8px; }
+            .faq2 h3{
+                font-size: 15px; }
+            .faq2 p{   
+                font-size: 10px; }
+    .contact-grid{
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 290px 200px 200px 250px;
+        grid-template-areas: 
+        "contact1"
+        "contact2"
+        "contact3"
+        "contact4"
+        ; }
+        .contacto-banner{
+            background-image: url(../assets/img/contacto_banner.png);
+            background-size: 100% 290px;
+            grid-area: contact1; }
+            .contacto-banner h1{
+                font-size: 35px;
+                position: absolute;
+                top: 145px;
+                left: 100px; }
+        .contact1{
+            grid-area: contact2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+        .contact2{
+            grid-area: contact3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .contact2 div p{
+                font-size: 24px;
+                font-weight: 500; }
+        .contact3{
+            background-color: #d9d9d9;
+            grid-area: contact4; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .enviocontacto{
+                width: 100px;
+                height: 25px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 600; }
+            .contact3 p{
+                font-size: 12px;
+                font-weight: 500;
+                padding: 10px 35px 0px 35px; } 
+    .nosotros-banner{
+        height: 290px;
+        background-image: url(../assets/img/nosotros_banner.png);
+        background-size: 100% 290px;}
+        .nosotros-banner h1{
+            font-size: 35px;
+            position: absolute;
+            top: 145px;
+            left: 100px; }
+    .section-origin{
+        height: 150px;}
+        .section-origin h2{
+            font-size: 35px; }
+        .section-origin p{
+            font-size: 14px; }
+    .section-aroha{
+        height: 150px; } 
+        .section-aroha h2{
+            font-size: 35px; }
+        .section-aroha p{
+            font-size: 14px; }   
+    .section-brand{
+        height: 150px; }
+        .section-brand h2{
+            font-size: 35px; }
+        .section-brand p{
+            font-size: 14px; }
+    }
