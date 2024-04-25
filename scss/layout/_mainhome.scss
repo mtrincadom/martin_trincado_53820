@@ -13,7 +13,10 @@
         text-shadow: 2px 2px 5px black; }
 .home-section {
     width: 100%;
-    height: 400px; }
+    height: 800px; 
+    background-image: url(../assets/img/fern-background.jpg);
+    background-size: auto;
+    background-color: black 80%;}
     .home-section h2 {
         font-size: 32px;
         font-weight: 700;
