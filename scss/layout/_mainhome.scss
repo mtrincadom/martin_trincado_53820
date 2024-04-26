@@ -1,3 +1,10 @@
+.home-main{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/fern-background.jpg");
+    background-size: auto;
+    display: flex;
+    flex-direction: column;}
 .home-banner {
     width: 100%;
     height: 544px;
@@ -11,12 +18,41 @@
         top: 150px;
         left: 150px;
         text-shadow: 2px 2px 5px black; }
+.home-grid{
+    width: 80%;
+    height: 500px;
+    gap: 15px;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "home1 home2 home3"
+    "home1 home4 home3"
+    ;
+}
+.grid-img1{
+    grid-area: home1;}
+    .grid-img1 img{
+        width: 400px;
+        height: 300px;}
+.grid-img2{
+    grid-area: home2;}
+    .grid-img2 img{
+        width: 400px;
+        height: 300px;}
+.grid-img3{
+    grid-area: home3;}
+    .grid-img3 img{
+        width: 400px;
+        height: 300px;}
+.grid-img4{
+    grid-area: home4;}
+    .grid-img4 img{
+        width: 400px;
+        height: 300px;
+    }
 .home-section {
     width: 100%;
-    height: 800px; 
-    background-image: url(../assets/img/fern-background.jpg);
-    background-size: auto;
-    background-color: black 80%;}
+    height: 800px;}
     .home-section h2 {
         font-size: 32px;
         font-weight: 700;
