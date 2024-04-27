@@ -14,58 +14,58 @@
     <meta property="og:description" content="Ropa hecha con amor, donde cada prenda queremos que sea única.">
     <meta property="og:type" content="website">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="../assets/img/favicon-aroha.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./assets/img/logo-chico.png" alt="Logo Aroha Clothing Co. Navegación"></a>
+    <header class="nav-wraper">
         <nav>
-            <ul class="nav-site">
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/tienda.html">TIENDA</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-            </ul>
+            <a class="logo" href="./index.html"><img src="./assets/img/logo-chico.png" alt="Logo Aroha Clothing Co. Navegación"></a>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="nav-site">
+                <ul>
+                    <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./pages/tienda.html">TIENDA</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/faq.html">FAQ</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="home-main">
         <section class="home-banner">
             <h1>ROPA<br>HECHA<br>CON<br>AMOR</h1>
         </section>
-        <section class="home-grid">
-            <div class="grid-img1">
-                <img src="./assets/img/poleras-category.png" alt="Polera negra de hombre">
-            </div>
-            <div class="grid-img2">
-                <img src="./assets/img/polerones-category.png" alt="Poleron beige unisex tipo hoddie">
-            </div>
-            <div class="grid-img3">
-                <img src="./assets/img/camisas-category.png" alt="Camisas de hombre de moda">
-            </div>
-            <div class="grid-img4">
-                <img src="./assets/img/accesorios-category.png" alt="Gorro tipo bucket azul con margaritas">
-            </div>
-        </section>
         <section class="home-section">
             <h2>CATEGORIAS</h2>
-            <div class="home-categories">    
-                <article>
-                    <img src="./assets/img/categoria-polera.png" alt="Polera blanca de hombre juvenil">
-                    <h3>POLERAS</h3>
-                </article>
-                <article>
-                    <img src="./assets/img/categoria-camisas.png" alt="Camisa blanca sin cuello de hombre"> 
-                    <h3>CAMISAS</h3>
-                </article>
-                <article>
-                    <img src="./assets/img/categoria-polerones.png" alt="Poleron gris unisex tipo hoddie">
-                    <h3>POLERONES</h3>
-                </article>  
-                <article>
-                    <img src="./assets/img/categoria-accesorios.png" alt="Jockey verde pistacho con bordado de palmera">
-                    <h3>ACCESORIOS</h3>
-                </article>
+            <div class="home-categories">
+                <div class="card1">
+                    <img src="./assets/img/categoria-polera.png" alt="Polera blanca de hombre juvenil" style="width:100%">
+                    <div class="container">
+                      <h3>POLERAS</h3>
+                    </div>
+                </div>    
+                <div class="card2">
+                    <img src="./assets/img/camisas-category.png" alt="Camisa blanca sin cuello de hombre" style="width:100%">
+                    <div class="container">
+                      <h3>CAMISAS</h3>
+                    </div>
+                </div>    
+                <div class="card3">
+                    <img src="./assets/img/categoria-polerones.png" alt="Poleron gris unisex tipo hoddie" style="width:100%">
+                    <div class="container">
+                      <h3>POLERONES</h3>
+                    </div>
+                </div>
+                <div class="card4">
+                    <img src="./assets/img/accesorios-category.png" alt="Jockey verde pistacho con bordado de palmera" style="width:100%">
+                    <div class="container">
+                      <h3>ACCESORIOS</h3>
+                    </div>
+                </div>                     
             </div>    
         </section>
         <section class="newsletter">
@@ -79,7 +79,7 @@
                 </div>
             </div>    
             <div class="newsletter2">
-                <form action="">
+                <form action="index.html" >
                     <fieldset>
                         <legend>Nombre</legend>
                         <label for="nombre-reg"></label>

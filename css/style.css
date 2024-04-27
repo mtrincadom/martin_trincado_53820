@@ -8,48 +8,47 @@ body {
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   box-sizing: border-box; }
 
-header {
+.nav-wraper {
   width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1.25rem;
   padding: .125rem;
   background-color: black; }
 
-.nav-site {
-  width: 100%;
+nav {
   display: flex;
-  flex-flow: row wrap;
-  font-size: 20px;
-  font-weight: 800;
-  list-style-type: none;
-  gap: 1.875rem;
-  padding-right: 1.25rem; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
-.nav-site li a {
+nav div ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px; }
+
+nav div ul li a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  font-size: 20px; }
+
+nav #toggle, nav laber {
+  display: none; }
 
 .home-main {
   width: 100%;
   height: 100%;
   background-image: url("../assets/img/fern-background.jpg");
-  background-size: auto;
+  background-size: cover;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .home-banner {
   width: 100%;
   height: 544px;
   background-image: url("../assets/img/main_banner.png");
-  background-size: 100% 544px; }
+  background-size: 100% 544px;
+  padding-bottom: 10px; }
 
 .home-banner h1 {
   font-size: 60px;
@@ -60,47 +59,12 @@ header {
   left: 150px;
   text-shadow: 2px 2px 5px black; }
 
-.home-grid {
-  width: 80%;
-  height: 500px;
-  gap: 15px;
-  grid-template-columns: 3fr;
-  grid-template-rows: 2fr;
-  grid-template-areas: "home1 home2 home3" "home1 home4 home3"; }
-
-.grid-img1 {
-  grid-area: home1; }
-
-.grid-img1 img {
-  width: 400px;
-  height: 300px; }
-
-.grid-img2 {
-  grid-area: home2; }
-
-.grid-img2 img {
-  width: 400px;
-  height: 300px; }
-
-.grid-img3 {
-  grid-area: home3; }
-
-.grid-img3 img {
-  width: 400px;
-  height: 300px; }
-
-.grid-img4 {
-  grid-area: home4; }
-
-.grid-img4 img {
-  width: 400px;
-  height: 300px; }
-
 .home-section {
   width: 100%;
-  height: 800px; }
+  height: 450px; }
 
 .home-section h2 {
+  color: white;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -116,12 +80,14 @@ header {
   gap: 40px; }
 
 .home-categories h3 {
+  color: white;
   font-size: 20px;
   font-weight: 700;
-  text-align: center; }
+  text-align: center;
+  padding-top: 5px; }
 
 .home-categories img {
-  filter: drop-shadow(5px 5px 5px black); }
+  filter: drop-shadow(2px 2px 2px white); }
 
 .newsletter {
   display: flex;
@@ -137,6 +103,7 @@ header {
   align-content: center;
   align-items: center;
   background-color: black;
+  opacity: 0.8;
   width: 50%;
   height: 250px;
   color: white;
@@ -158,6 +125,7 @@ header {
 
 .newsletter2 {
   background-color: #d9d9d9;
+  opacity: 0.8;
   width: 50%;
   height: 250px;
   padding: 50px 30px 50px 30px;
@@ -198,6 +166,7 @@ legend {
 
 .rrss {
   background-color: #d9d9d9;
+  opacity: 0.8;
   width: 50%;
   height: 250px;
   display: flex;
@@ -215,6 +184,7 @@ legend {
 
 .customerservice {
   background-color: black;
+  opacity: 0.8;
   width: 50%;
   height: 250px;
   color: white;
@@ -626,10 +596,18 @@ legend {
     font-size: 20px; } }
 
 @media (max-width: 768px) {
-  .nav-site {
-    font-size: 15px;
-    font-weight: 500;
-    gap: 20px; }
+  nav .nav-site {
+    width: 100%;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0; }
+  nav label {
+    display: inline-flex;
+    cursor: pointer; }
+  nav #toggle:checked ~ .nav-site {
+    height: 100%; }
   main {
     height: 100%; }
   .faq-banner {
