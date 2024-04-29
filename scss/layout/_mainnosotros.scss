@@ -1,3 +1,8 @@
+.nosotros-main{
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/fern-background.jpg");
+    background-size: cover;}
 .nosotros-banner{
     width: 100%;
     height: 544px;
@@ -19,6 +24,7 @@
     .origin1{
         width: 50%;
         background-color: black;
+        opacity: 0.8;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -30,6 +36,7 @@
     .origin2{
         width: 50%;
         background-color: white;
+        opacity: 0.8;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -46,6 +53,7 @@
     width: 100%; }
     .aroha2{
         background-color: black;
+        opacity: 0.8;
         width: 50%;
         display: flex;
         flex-direction: row;
@@ -58,6 +66,7 @@
     .aroha1{
         width: 50%;
         background-color: white;
+        opacity: 0.8;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -74,6 +83,7 @@
     width: 100%; }
     .brand1{
         background-color: black;
+        opacity: 0.8;
         width: 50%;
         display: flex;
         flex-direction: row;
@@ -86,6 +96,7 @@
     .brand2{
         width: 50%;
         background-color: white;
+        opacity: 0.8;
         display: flex;
         flex-direction: row;
         justify-content: center;

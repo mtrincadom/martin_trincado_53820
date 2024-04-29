@@ -8,6 +8,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  border: 1px solid greenyellow;
   box-sizing: border-box; }
 
 .nav-wraper {
@@ -18,8 +19,8 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-evenly;
+  align-items: baseline; }
 
 nav div ul {
   display: flex;
@@ -29,9 +30,10 @@ nav div ul {
 nav div ul li a {
   text-decoration: none;
   color: white;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 800; }
 
-nav #toggle, nav laber {
+nav #toggle, nav label {
   display: none; }
 
 .home-main {
@@ -134,6 +136,10 @@ nav #toggle, nav laber {
   justify-content: center;
   align-items: center; }
 
+form {
+  width: auto;
+  height: auto; }
+
 fieldset {
   border: 0px;
   padding-bottom: 10px; }
@@ -142,9 +148,9 @@ legend {
   display: none; }
 
 ::placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #d9d9d9;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Nunito Sans", sans-serif; }
 
 .registronewsletter {
   width: 200px;
@@ -152,7 +158,7 @@ legend {
   border: 0px;
   background-color: black;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -205,6 +211,12 @@ legend {
   text-align: center;
   padding-bottom: 2px; }
 
+.nosotros-main {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/fern-background.jpg");
+  background-size: cover; }
+
 .nosotros-banner {
   width: 100%;
   height: 544px;
@@ -229,6 +241,7 @@ legend {
 .origin1 {
   width: 50%;
   background-color: black;
+  opacity: 0.8;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -242,6 +255,7 @@ legend {
 .origin2 {
   width: 50%;
   background-color: white;
+  opacity: 0.8;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,6 +275,7 @@ legend {
 
 .aroha2 {
   background-color: black;
+  opacity: 0.8;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -275,6 +290,7 @@ legend {
 .aroha1 {
   width: 50%;
   background-color: white;
+  opacity: 0.8;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -294,6 +310,7 @@ legend {
 
 .brand1 {
   background-color: black;
+  opacity: 0.8;
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -308,6 +325,7 @@ legend {
 .brand2 {
   width: 50%;
   background-color: white;
+  opacity: 0.8;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -318,6 +336,12 @@ legend {
   font-weight: 600;
   color: black;
   align-items: center; }
+
+.tienda-main {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/fern-background.jpg");
+  background-size: cover; }
 
 .tienda-banner {
   background-image: url(../assets/img/tienda_banner.png);
@@ -339,13 +363,14 @@ legend {
   height: 400px; }
 
 .tienda-section h2 {
+  color: white;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   text-align: center;
   padding: 5px 10px; }
 
-.tienda-categories {
+.home-categories {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -353,47 +378,50 @@ legend {
   align-items: center;
   gap: 40px; }
 
-.tienda-categories h3 {
+.home-categories h3 {
+  color: white;
   font-size: 20px;
   font-weight: 700;
-  text-align: center; }
+  text-align: center;
+  padding-top: 5px; }
 
-.tienda-categories img {
-  filter: drop-shadow(5px 5px 5px black); }
+.home-categories img {
+  filter: drop-shadow(2px 2px 2px white); }
 
 .section-products {
   width: 100%;
-  height: 520px;
+  height: 550px;
   border-top: 2.5px solid black;
   padding-bottom: 10px; }
 
 .section-products h2 {
+  color: white;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   text-align: center;
   padding: 5px 10px; }
 
-.products {
+.contenedor-products {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: center;
   gap: 40px; }
 
-.products h3 {
+.container h3 {
+  color: white;
   font-size: 24px;
   font-weight: 800;
   text-align: center; }
 
-.products h5 {
+.container h5 {
+  color: white;
   font-size: 16px;
   font-weight: 600;
   text-align: center; }
 
-.products article img {
-  filter: drop-shadow(5px 5px 5px black); }
+.contenedor-products div img {
+  filter: drop-shadow(2px 2px 2px white); }
 
 .button-container {
   display: flex;
@@ -415,9 +443,11 @@ legend {
 .contact-grid {
   display: grid;
   width: 100%;
-  height: 1044px;
+  height: 1100px;
+  background-image: url("../assets/img/fern-background.jpg");
+  background-size: cover;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 544px 250px 250px;
+  grid-template-rows: 544px 250px 300px;
   grid-template-areas: "contact1 contact1"  "contact2 contact3" "contact4 contact4"; }
 
 .contacto-banner {
@@ -436,6 +466,7 @@ legend {
 
 .contact1 {
   background-color: black;
+  opacity: 0.8;
   grid-area: contact2;
   display: flex;
   justify-content: center;
@@ -443,6 +474,7 @@ legend {
 
 .contact2 {
   background-color: white;
+  opacity: 0.8;
   grid-area: contact3;
   display: flex;
   justify-content: center;
@@ -454,6 +486,7 @@ legend {
 
 .contact3 {
   background-color: #d9d9d9;
+  opacity: 0.8;
   grid-area: contact4;
   display: flex;
   flex-direction: column;
@@ -466,8 +499,8 @@ legend {
   border: 0px;
   background-color: black;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   filter: drop-shadow(3px 3px 3px black); }
@@ -476,6 +509,12 @@ legend {
   font-size: 16px;
   font-weight: 500;
   padding-top: 10px; }
+
+.faq-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/fern-background.jpg");
+  background-size: cover; }
 
 .faq-banner {
   width: 100%;
@@ -497,24 +536,26 @@ legend {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 650px; }
+  height: 750px; }
 
 .faq1 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
+  opacity: 0.8;
   width: 35%;
-  height: 650px; }
+  height: 100%; }
 
 .faq2 {
   background-color: white;
+  opacity: 0.8;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 65%;
-  height: 650px;
+  height: 100%;
   padding: 0px 10px 0px 10px; }
 
 .faq2 ul li {
@@ -531,8 +572,80 @@ legend {
   padding: 5px; }
 
 @media (max-width: 1024px) {
-  main {
+  .home-main {
+    width: 100%;
     height: 100%; }
+  .home-banner {
+    width: 100%;
+    height: 386px;
+    background-image: url(../assets/img/main_banner.png);
+    background-size: 100% 386px; }
+  .home-banner h1 {
+    font-size: 45px;
+    position: absolute;
+    top: 150px;
+    left: 150px; }
+  .home-section {
+    width: 100%;
+    height: 350px; }
+  .home-section h2 {
+    font-size: 28px; }
+  .home-categories {
+    width: 98%;
+    gap: 20px;
+    padding-left: 12px; }
+  .home-categories h3 {
+    font-size: 18px; }
+  .home-categories img {
+    size: 250px 250px; }
+  .newsletter-main h4 {
+    font-size: 20px; }
+  .newsletter-main p {
+    font-size: 16px; }
+  .newsletter2 form {
+    width: 100px; }
+  .registronewsletter {
+    width: 180px;
+    height: 25px;
+    font-size: 14px; }
+  .rrss h4 {
+    font-size: 22px; }
+  .customerservice h4 {
+    font-size: 22px; }
+  .customerservice ul li {
+    font-size: 14px; }
+  .tienda-main {
+    width: 100%;
+    height: 100%; }
+  .tienda-banner {
+    width: 100%;
+    height: 386px;
+    background-image: url(../assets/img/tienda_banner.png);
+    background-size: 100% 386px; }
+  .tienda-banner h1 {
+    font-size: 45px;
+    position: absolute;
+    top: 230px;
+    left: 150px; }
+  .tienda-section {
+    height: 350px; }
+  .tienda-section h2 {
+    font-size: 28px; }
+  .section-products {
+    width: 100%;
+    height: 515px; }
+  .section-products h2 {
+    font-size: 28px; }
+  .contenedor-products {
+    gap: 10px;
+    padding-left: 12px;
+    width: 98%; }
+  .contenedor-products div h3 {
+    font-size: 22px; }
+  .contenedor-products div h5 {
+    font-size: 14px; }
+  .contenedor-products div img {
+    size: 250px 370px; }
   .faq-banner {
     width: 100%;
     height: 386px;
@@ -544,7 +657,7 @@ legend {
     top: 193px;
     left: 150px; }
   .faq-main {
-    height: 700px; }
+    height: 730px; }
   .faq1 {
     height: 100%; }
   .faq2 {
@@ -556,7 +669,7 @@ legend {
     font-size: 14px; }
   .contact-grid {
     height: 100%;
-    grid-template-rows: 386px 200px 250px; }
+    grid-template-rows: 386px 200px 280px; }
   .contacto-banner {
     background-image: url(../assets/img/contacto_banner.png);
     background-size: 100% 386px; }
@@ -596,8 +709,9 @@ legend {
     font-size: 20px; } }
 
 @media (max-width: 768px) {
-  nav .nav-site {
+  nav .menu {
     width: 100%;
+    height: 0;
     overflow: hidden; }
   nav ul {
     flex-direction: column;
@@ -605,10 +719,76 @@ legend {
     padding: 8px 0; }
   nav label {
     display: inline-flex;
-    cursor: pointer; }
-  nav #toggle:checked ~ .nav-site {
+    cursor: pointer;
+    color: white; }
+  nav #toggle:checked ~ .menu {
     height: 100%; }
-  main {
+  .home-main {
+    width: 100%;
+    height: 100%; }
+  .home-banner {
+    width: 100%;
+    height: 290px;
+    background-image: url(../assets/img/main_banner.png);
+    background-size: 100% 290px; }
+  .home-banner h1 {
+    font-size: 35px;
+    top: 130px;
+    left: 150px; }
+  .home-section {
+    width: 100%;
+    height: 280px; }
+  .home-section h2 {
+    font-size: 25px; }
+  .home-categories h3 {
+    font-size: 15px; }
+  .newsletter-main h4 {
+    font-size: 18px; }
+  .newsletter-main p {
+    font-size: 12px; }
+  .newsletter2 form {
+    width: 100px; }
+  .registronewsletter {
+    width: 150px;
+    height: 25px;
+    font-size: 14px; }
+  .rrss h4 {
+    font-size: 18px; }
+  .customerservice h4 {
+    font-size: 18px; }
+  .customerservice ul li {
+    font-size: 12px; }
+  .tienda-main {
+    width: 100%;
+    height: 100%; }
+  .tienda-banner {
+    width: 100%;
+    height: 290px;
+    background-image: url(../assets/img/tienda_banner.png);
+    background-size: 100% 290px; }
+  .tienda-banner h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 180px;
+    left: 150px; }
+  .tienda-section {
+    height: 280px; }
+  .tienda-section h2 {
+    font-size: 25px; }
+  .section-products {
+    width: 100%;
+    height: 420px; }
+  .section-products h2 {
+    font-size: 25px; }
+  .contenedor-products {
+    gap: 10px;
+    padding-left: 12px;
+    width: 98%; }
+  .contenedor-products div h3 {
+    font-size: 18px; }
+  .contenedor-products div h5 {
+    font-size: 12px; }
+  .faq-background {
     height: 100%; }
   .faq-banner {
     width: 100%;
@@ -618,15 +798,15 @@ legend {
   .faq-banner h1 {
     font-size: 40px;
     position: absolute;
-    top: 145px;
+    top: 180px;
     left: 100px; }
   .faq-main {
-    height: 478px; }
+    height: 580px; }
   .faq1 {
     height: 100%; }
   .faq2 {
     height: 100%;
-    padding: 4px 8px 2px 8px; }
+    padding: 4px 8px 2px 2px; }
   .faq2 h3 {
     font-size: 15px; }
   .faq2 p {
@@ -634,7 +814,7 @@ legend {
   .contact-grid {
     height: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 290px 200px 200px 250px;
+    grid-template-rows: 290px 200px 200px 300px;
     grid-template-areas: "contact1" "contact2" "contact3" "contact4"; }
   .contacto-banner {
     background-image: url(../assets/img/contacto_banner.png);
@@ -643,7 +823,7 @@ legend {
   .contacto-banner h1 {
     font-size: 35px;
     position: absolute;
-    top: 145px;
+    top: 180px;
     left: 100px; }
   .contact1 {
     grid-area: contact2;
@@ -684,7 +864,7 @@ legend {
   .nosotros-banner h1 {
     font-size: 35px;
     position: absolute;
-    top: 145px;
+    top: 180px;
     left: 100px; }
   .section-origin {
     height: 150px; }
@@ -705,13 +885,72 @@ legend {
   .section-brand p {
     font-size: 14px; } }
 
-@media (max-width: 425px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px; }
+@media (max-width: 375px) {
+  .home-main {
+    width: 100%;
+    height: 100%; }
+  .home-banner {
+    width: 100%;
+    height: 120px;
+    background-image: url(../assets/img/main_banner.png);
+    background-size: 100% 120px; }
+  .home-banner h1 {
+    font-size: 150px;
+    top: 130px;
+    left: 5px; }
+  .home-section {
+    width: 100%;
+    height: 280px; }
+  .home-section h2 {
+    font-size: 25px; }
+  .home-categories h3 {
+    font-size: 15px; }
+  .newsletter-main h4 {
+    font-size: 18px; }
+  .newsletter-main p {
+    font-size: 12px; }
+  .newsletter2 form {
+    width: 100px; }
+  .registronewsletter {
+    width: 150px;
+    height: 25px;
+    font-size: 14px; }
+  .rrss h4 {
+    font-size: 18px; }
+  .customerservice h4 {
+    font-size: 18px; }
+  .customerservice ul li {
+    font-size: 12px; }
+  .tienda-main {
+    width: 100%;
+    height: 100%; }
+  .tienda-banner {
+    width: 100%;
+    height: 290px;
+    background-image: url(../assets/img/tienda_banner.png);
+    background-size: 100% 290px; }
+  .tienda-banner h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 180px;
+    left: 150px; }
+  .tienda-section {
+    height: 280px; }
+  .tienda-section h2 {
+    font-size: 25px; }
+  .section-products {
+    width: 100%;
+    height: 420px; }
+  .section-products h2 {
+    font-size: 25px; }
+  .contenedor-products {
+    gap: 10px;
+    padding-left: 12px;
+    width: 98%; }
+  .contenedor-products div h3 {
+    font-size: 18px; }
+  .contenedor-products div h5 {
+    font-size: 12px; }
   .nav-site {
     display: flex;
     flex-direction: column;

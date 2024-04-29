@@ -83,23 +83,26 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;}
+        form{
+            width: auto;
+            height: auto;}
             fieldset{
                 border: 0px;
                 padding-bottom: 10px; }
                 legend{
                     display: none;}
                 ::placeholder{
-                    font-size: 16px;
+                    font-size: 14px;
                     color: #d9d9d9;
-                    font-family: "Montserrat", sans-serif; }
+                    font-family: "Nunito Sans", sans-serif; }
         .registronewsletter{
                 width: 200px;
                 height: 30px;
                 border: 0px;
                 background-color: black;
                 color: white;
-                font-family: "Montserrat", sans-serif;
+                font-family: "Nunito Sans", sans-serif;
                 font-size: 16px;
                 font-weight: 700; 
                 letter-spacing: 2px;

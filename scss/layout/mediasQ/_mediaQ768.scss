@@ -1,22 +1,85 @@
 @media (max-width: 768px){
-    nav .nav-site{
+    nav .menu{
         width: 100%;
-        overflow: hidden;
-    }
+        height: 0;
+        overflow: hidden;}
     nav ul{
         flex-direction: column;
         align-items: center;
-        padding: 8px 0;
-    }
+        padding: 8px 0;}
     nav label{
         display: inline-flex;
         cursor: pointer;
-    }
-    nav #toggle:checked ~ .nav-site{
-        height: 100%;
-    }
-    main{
-        height: 100%; }
+        color: white;}
+    nav #toggle:checked ~ .menu{
+        height: 100%;}
+    .home-main{
+        width: 100%;
+        height: 100%;}
+    .home-banner{
+        width: 100%;
+        height: 290px;
+        background-image: url(../assets/img/main_banner.png);
+        background-size: 100% 290px; }
+        .home-banner h1{
+            font-size: 35px;
+            top: 130px;
+            left: 150px; }
+    .home-section{
+        width: 100%;
+        height: 280px; }
+        .home-section h2{
+            font-size: 25px;}
+        .home-categories h3{
+            font-size: 15px;}
+    .newsletter-main h4{
+        font-size: 18px;}
+    .newsletter-main p{
+        font-size: 12px;}
+    .newsletter2 form{
+        width: 100px;}
+    .registronewsletter{
+        width: 150px;
+        height: 25px;
+        font-size: 14px;}
+    .rrss h4{
+        font-size: 18px;}
+    .customerservice h4{
+        font-size: 18px;}
+    .customerservice ul li{
+        font-size: 12px;}
+.tienda-main{
+    width: 100%;
+    height: 100%;}
+    .tienda-banner{
+        width: 100%;
+        height: 290px;
+        background-image: url(../assets/img/tienda_banner.png);
+        background-size: 100% 290px; }
+        .tienda-banner h1{
+            font-size: 40px;
+            position: absolute;
+            top: 180px;
+            left: 150px; }
+    .tienda-section{
+        height: 280px;}
+        .tienda-section h2{
+            font-size: 25px;}
+    .section-products{
+        width: 100%;
+        height: 420px;}
+        .section-products h2{
+            font-size: 25px;}
+        .contenedor-products{
+            gap: 10px;
+            padding-left: 12px;
+            width: 98%;}
+            .contenedor-products div h3{
+                font-size: 18px;}
+            .contenedor-products div h5{
+                font-size: 12px;}
+    .faq-background{
+        height: 100%;}
     .faq-banner{
         width: 100%;
         height: 290px;
@@ -25,15 +88,15 @@
         .faq-banner h1{
             font-size: 40px;
             position: absolute;
-            top: 145px;
+            top: 180px;
             left: 100px; }
     .faq-main{
-        height: 478px; }
+        height: 580px; }
         .faq1{
             height: 100%; }
         .faq2{
             height: 100%;
-            padding: 4px 8px 2px 8px; }
+            padding: 4px 8px 2px 2px; }
             .faq2 h3{
                 font-size: 15px; }
             .faq2 p{   
@@ -41,7 +104,7 @@
     .contact-grid{
         height: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: 290px 200px 200px 250px;
+        grid-template-rows: 290px 200px 200px 300px;
         grid-template-areas: 
         "contact1"
         "contact2"
@@ -55,7 +118,7 @@
             .contacto-banner h1{
                 font-size: 35px;
                 position: absolute;
-                top: 145px;
+                top: 180px;
                 left: 100px; }
         .contact1{
             grid-area: contact2;
@@ -96,7 +159,7 @@
         .nosotros-banner h1{
             font-size: 35px;
             position: absolute;
-            top: 145px;
+            top: 180px;
             left: 100px; }
     .section-origin{
         height: 150px;}
